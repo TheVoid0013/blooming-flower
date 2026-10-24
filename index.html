@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blooming flower</title>
-
-    <link href="main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
 </head>
 
@@ -310,19 +309,5 @@
 </body>
 
 
-<script>
-  onload = () => {
-    const hue = Math.floor(Math.random() * 360);
-    document.querySelectorAll(".flower").forEach((flower) => {
-      flower.style.setProperty("--hue", hue);
-    });
-
-    const c = setTimeout(() => {
-      document.body.classList.remove("not-loaded");
-      clearTimeout(c);
-    }, 1000);
-  };
-</script>
-
-
+<script src="js/main.js"></script>
 </html>
